@@ -15,6 +15,11 @@
 		F3C5345B25A4B40E006E3A90 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F3C5345925A4B40E006E3A90 /* LaunchScreen.storyboard */; };
 		F3C5346825A4B51D006E3A90 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3C5346625A4B51D006E3A90 /* HomeViewController.swift */; };
 		F3C5346925A4B51D006E3A90 /* HomeViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = F3C5346725A4B51D006E3A90 /* HomeViewController.xib */; };
+		F3C5346E25A4BCD3006E3A90 /* ScrollViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3C5346C25A4BCD3006E3A90 /* ScrollViewController.swift */; };
+		F3C5346F25A4BCD3006E3A90 /* ScrollViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = F3C5346D25A4BCD3006E3A90 /* ScrollViewController.xib */; };
+		F3C5347525A4CCE6006E3A90 /* Item.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3C5347425A4CCE6006E3A90 /* Item.swift */; };
+		F3C5347925A4CF29006E3A90 /* ItemCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3C5347725A4CF29006E3A90 /* ItemCollectionViewCell.swift */; };
+		F3C5347A25A4CF29006E3A90 /* ItemCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = F3C5347825A4CF29006E3A90 /* ItemCollectionViewCell.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,6 +33,11 @@
 		F3C5345C25A4B40E006E3A90 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		F3C5346625A4B51D006E3A90 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		F3C5346725A4B51D006E3A90 /* HomeViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HomeViewController.xib; sourceTree = "<group>"; };
+		F3C5346C25A4BCD3006E3A90 /* ScrollViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScrollViewController.swift; sourceTree = "<group>"; };
+		F3C5346D25A4BCD3006E3A90 /* ScrollViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ScrollViewController.xib; sourceTree = "<group>"; };
+		F3C5347425A4CCE6006E3A90 /* Item.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Item.swift; sourceTree = "<group>"; };
+		F3C5347725A4CF29006E3A90 /* ItemCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemCollectionViewCell.swift; sourceTree = "<group>"; };
+		F3C5347825A4CF29006E3A90 /* ItemCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ItemCollectionViewCell.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,6 +70,8 @@
 		F3C5344A25A4B40B006E3A90 /* iOSApp */ = {
 			isa = PBXGroup;
 			children = (
+				F3C5347325A4C2CE006E3A90 /* cells */,
+				F3C5347225A4C2C8006E3A90 /* models */,
 				F3C5346525A4B443006E3A90 /* controllers */,
 				F3C5346325A4B423006E3A90 /* apputils */,
 				F3C5344B25A4B40B006E3A90 /* AppDelegate.swift */,
@@ -85,8 +97,27 @@
 			children = (
 				F3C5346625A4B51D006E3A90 /* HomeViewController.swift */,
 				F3C5346725A4B51D006E3A90 /* HomeViewController.xib */,
+				F3C5346C25A4BCD3006E3A90 /* ScrollViewController.swift */,
+				F3C5346D25A4BCD3006E3A90 /* ScrollViewController.xib */,
 			);
 			path = controllers;
+			sourceTree = "<group>";
+		};
+		F3C5347225A4C2C8006E3A90 /* models */ = {
+			isa = PBXGroup;
+			children = (
+				F3C5347425A4CCE6006E3A90 /* Item.swift */,
+			);
+			path = models;
+			sourceTree = "<group>";
+		};
+		F3C5347325A4C2CE006E3A90 /* cells */ = {
+			isa = PBXGroup;
+			children = (
+				F3C5347725A4CF29006E3A90 /* ItemCollectionViewCell.swift */,
+				F3C5347825A4CF29006E3A90 /* ItemCollectionViewCell.xib */,
+			);
+			path = cells;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -148,6 +179,8 @@
 			files = (
 				F3C5345B25A4B40E006E3A90 /* LaunchScreen.storyboard in Resources */,
 				F3C5345825A4B40E006E3A90 /* Assets.xcassets in Resources */,
+				F3C5346F25A4BCD3006E3A90 /* ScrollViewController.xib in Resources */,
+				F3C5347A25A4CF29006E3A90 /* ItemCollectionViewCell.xib in Resources */,
 				F3C5345325A4B40B006E3A90 /* Main.storyboard in Resources */,
 				F3C5346925A4B51D006E3A90 /* HomeViewController.xib in Resources */,
 			);
@@ -162,8 +195,11 @@
 			files = (
 				F3C5344C25A4B40B006E3A90 /* AppDelegate.swift in Sources */,
 				F3C5344E25A4B40B006E3A90 /* SceneDelegate.swift in Sources */,
+				F3C5346E25A4BCD3006E3A90 /* ScrollViewController.swift in Sources */,
 				F3C5345625A4B40B006E3A90 /* iOSApp.xcdatamodeld in Sources */,
+				F3C5347525A4CCE6006E3A90 /* Item.swift in Sources */,
 				F3C5346825A4B51D006E3A90 /* HomeViewController.swift in Sources */,
+				F3C5347925A4CF29006E3A90 /* ItemCollectionViewCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
